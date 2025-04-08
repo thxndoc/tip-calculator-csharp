@@ -16,6 +16,7 @@ namespace TipCalculator
             int numOfPeopleSplittingBill;
             decimal tipAmount;
             decimal totalAmount;
+            decimal totalAmountForEachPerson;
 
             Console.WriteLine("Welcome to the tip calculator! \n");
 
@@ -34,9 +35,8 @@ namespace TipCalculator
             totalAmount = billAmount + tipAmount;
             Console.WriteLine($"Total Amount: R{totalAmount:F2}");
 
-
-
-
+            totalAmountForEachPerson = totalAmount / numOfPeopleSplittingBill;
+            Console.WriteLine($"How much each person pays: R{totalAmountForEachPerson:F2}");
 
             Console.ReadKey();
         }
