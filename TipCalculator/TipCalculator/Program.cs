@@ -29,10 +29,12 @@ namespace TipCalculator
             numOfPeopleSplittingBill = int.Parse(Console.ReadLine());
 
             tipAmount = billAmount * (tipPercentage / 100m);
-            Console.WriteLine($"Tip amount: R{tipAmount}");
+            Console.WriteLine($"Tip amount: R{tipAmount:F2}");
 
             totalAmount = billAmount + tipAmount;
-            Console.WriteLine($"Total Amount: R{totalAmount}");
+            Console.WriteLine($"Total Amount: R{totalAmount:F2}");
+
+
 
 
 
