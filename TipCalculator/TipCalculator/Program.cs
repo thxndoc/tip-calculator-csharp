@@ -22,7 +22,7 @@ namespace TipCalculator
 
             Console.WriteLine("Enter the bill amount (e,g., 200,95):");
             billAmount = decimal.Parse(Console.ReadLine());
-            Console.WriteLine();
+            Console.WriteLine(); // wanted to create line breaks
 
             Console.WriteLine("Enter the tip percentage (e.g., 10 for 10%)");
             tipPercentage = int.Parse(Console.ReadLine());
