@@ -11,19 +11,13 @@ namespace TipCalculator
         
         static void Main(string[] args)
         {
-            int tipPercentage;
-            int numOfPeopleSplittingBill;
+            decimal billAmount = 0;
 
             Console.WriteLine("Welcome to the tip calculator! \n");
 
             Console.WriteLine("Enter the bill amount: ");
-            decimal billAmount = decimal.Parse(Console.ReadLine());
+            billAmount = Convert.ToDecimal(Console.ReadLine());
 
-            //Console.WriteLine("Enter the tip percentage (e.g., 10 for 10%):");
-            //tipPercentage = Convert.ToInt32(Console.ReadLine());
-
-            //Console.WriteLine("How many people are splitting the bill?");
-            //numOfPeopleSplittingBill = Convert.ToInt32(Console.ReadLine());
 
             Console.ReadKey();
         }
