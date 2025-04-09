@@ -11,6 +11,11 @@ namespace TipCalculator
         
         static void Main(string[] args)
         {
+            CalculateTip();  
+            Console.ReadKey();
+        }
+        static void CalculateTip()
+        {
             decimal billAmount;
             int tipPercentage;
             int numOfPeopleSplittingBill;
@@ -41,7 +46,6 @@ namespace TipCalculator
             totalAmountForEachPerson = totalAmount / numOfPeopleSplittingBill;
             Console.WriteLine($"How much each person pays: R{totalAmountForEachPerson:F2}");
 
-            Console.ReadKey();
         }
     }
 }
